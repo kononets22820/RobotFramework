@@ -1,0 +1,11 @@
+# Robot Framework result files
+results/
+*.log
+*.html
+*.xml
+
+# Python cache files
+__pycache__/
+*.pyc
+
+.DS_Store
