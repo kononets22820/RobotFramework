@@ -48,7 +48,7 @@ pipeline {
 
     post {
     always {
-        robot outputPath: 'results/output.xml'
+        robot outputPath: 'results'
         publishHTML(target: [
             allowMissing: false,
             alwaysLinkToLastBuild: true,
