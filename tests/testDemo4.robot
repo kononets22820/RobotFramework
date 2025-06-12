@@ -25,7 +25,7 @@ Validate UnSuccessful Login
     verify error message is correct
 
 open the browser with the Mortgage payment url
-    Create Webdriver    Chrome  executable_path=/Users/rahulshetty/Documents/chromedriver
+    Create Webdriver    Chrome
     Go To   https://rahulshettyacademy.com/loginpagePractise/
 
 Fill the login Form
