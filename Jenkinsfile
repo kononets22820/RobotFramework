@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/kononets22820/RobotFramework.git'
-            }
-        }
-
         stage('Set Up Python Environment') {
             steps {
                 sh '''
@@ -58,3 +52,4 @@ pipeline {
         }
     }
 }
+
