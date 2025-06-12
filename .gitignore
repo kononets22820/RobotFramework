@@ -1,11 +1,20 @@
-# Robot Framework result files
-results/
+# macOS system file
+.DS_Store
+
+# Robot Framework test results
 *.log
 *.html
 *.xml
+*.png
 
-# Python cache files
-__pycache__/
-*.pyc
+# Python virtual environment
+venv/
 
-.DS_Store
+# Logs and output
+log.html
+output.xml
+report.html
+selenium-screenshot-*.png
+
+# IDE/config folders
+.idea/
