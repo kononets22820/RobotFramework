@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh '''
                     source $VENV_DIR/bin/activate
-                    robot -d results tests/
+                    robot --nostatusrc -d results tests/
                 '''
             }
         }
