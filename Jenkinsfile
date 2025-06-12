@@ -47,9 +47,17 @@ pipeline {
     }
 
     post {
-        always {
-            archiveArtifacts artifacts: 'results/**', fingerprint: true
-        }
+    always {
+        robot outputPath: 'results/output.xml'
+        publishHTML(target: [
+            allowMissing: false,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'results',
+            reportFiles: 'report.html',
+            reportName: 'Robot Framework Report'
+        ])
+        archiveArtifacts artifacts: 'results/**', fingerprint: true
     }
 }
 
