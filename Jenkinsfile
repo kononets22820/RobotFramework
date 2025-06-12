@@ -26,11 +26,7 @@ pipeline {
             }
         }
 
-        stage('Publish Robot Framework Results') {
-            steps {
-                publishRobotResults outputPath: 'results/output.xml'
-            }
-        }
+      
 
         stage('Publish HTML Report') {
             steps {
